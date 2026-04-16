@@ -1,0 +1,6 @@
+rm -f icg lex.yy.c parser.tab.*
+//(Remove old executables and generated files)
+bison -d parser.y
+flex lexer.l
+gcc lex.yy.c parser.tab.c ast.c -o icg -lfl
+./icg test.c

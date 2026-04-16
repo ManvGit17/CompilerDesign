@@ -1,0 +1,5 @@
+rm -f lex.yy.c c_lexer
+// To remove executables and generated files
+lex c_lexer.l
+gcc lex.yy.c -o c_lexer -ll
+./c_lexer test.c

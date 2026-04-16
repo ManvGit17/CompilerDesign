@@ -1,0 +1,6 @@
+rm lex.yy.c parser parser.tab.c parser.tab.h
+// (remove previously generated file)
+bison -d parser.y
+flex lexer.l
+gcc lex.yy.c parser.tab.c -o parser -lfl
+./parser < test.c

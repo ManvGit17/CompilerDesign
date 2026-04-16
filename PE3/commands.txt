@@ -1,0 +1,5 @@
+rm -f lex.yy.c parser.tab.c parser.tab.h parser
+bison -d parser.y
+flex lexer.l
+gcc lex.yy.c parser.tab.c symbol_table.c -o parser -lfl
+./parser < test.c

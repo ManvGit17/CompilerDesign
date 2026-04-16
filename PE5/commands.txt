@@ -1,0 +1,12 @@
+rm -f lex.yy.c y.tab.c y.tab.h ast_evaluator
+bison -d parser.y -o y.tab.c
+flex -o lex.yy.c lexer.l
+gcc -Wall -Wextra -g -o ast_evaluator lex.yy.c y.tab.c ast.c
+./ast_evaluator test.c
+
+
+rm -f ast_eval lex.yy.c parser.tab.c parser.tab.h y.tab.c y.tab.h
+bison -d parser.y
+flex lexer.l
+gcc lex.yy.c parser.tab.c ast.c -o ast_eval -lfl
+./ast_eval test.c

@@ -1,0 +1,29 @@
+# Generated files from lex and yacc
+lex.yy.c
+y.tab.c
+y.tab.h
+parser.tab.c
+parser.tab.h
+parser.tab.o
+
+# Compiled executables
+*.o
+*.out
+*.exe
+parser
+icg
+c_lexer
+ast_eval
+ast_evaluator
+tac
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace

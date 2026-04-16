@@ -1,0 +1,5 @@
+int a, int b, int c, int d,
+a=5,
+b=8,
+c=9,
+d=a+b*c

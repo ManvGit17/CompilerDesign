@@ -1,0 +1,4 @@
+// Summary: Demonstrates assignments, if-else, and do-while constructs for the ASSIGN2 compiler.
+a=b+c*d;                                // Straight assignment with higher-precedence multiplication.
+if(x<y){a=b+c;}else{a=b-c;}             // Conditional illustrating relational operator handling and blocks.
+do{a=a+1;}while(x<y);                   // Loop that increments a until the relational guard fails.

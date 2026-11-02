@@ -27,3 +27,6 @@ tac
 .vscode/
 .idea/
 *.code-workspace
+
+# Build output
+assign2
